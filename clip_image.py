@@ -35,7 +35,7 @@ def get_token():
 	import requests
 
 	# client_id 为官网获取的AK， client_secret 为官网获取的SK
-	host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=lK6HPRDHuU9guKCe6MeMvfdV&client_secret=eenu8wkdRiyL7CvXHgwvxtY5RoVCkGOk'
+	host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=***********&client_secret=**********'
 	response = requests.get(host)
 	if response:
 		return response.json().get("access_token")
